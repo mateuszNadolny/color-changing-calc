@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts/themeChanger.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+</head>
+<body data-mode="first">
+
+    <header>
+
+      <div class="header-logo">
+        <h2 class="logo">calc</h2>
+      </div>
+
+      <div class="toggle-wrapper">
+
+        <p class="toggle-paragraph">THEME</p>
+
+        <div class="toggle-switch">
+
+          <div class="toggle-label-wrapper">
+            <label for="default-mode-switch">1</label>
+            <label for="light-mode-switch">2</label>
+            <label for="dark-mode-switch">3</label>
+          </div>
+
+          <div class="toggle-input-wrapper">
+            <input checked type="radio" name="toggle" id="default-mode-switch" value="default">
+            <input type="radio" name="toggle" id="light-mode-switch" value="dark">
+            <input type="radio" name="toggle" id="dark-mode-switch" value="light">
+            <span></span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <section class="display">
+      <p class="display-result">0</p>
+    </section>
+
+    <section class="calc-buttons">
+      <button data-number class="calc-button operator-button seven">7</button>
+      <button data-number class="calc-button operator-button eight">8</button>
+      <button data-number class="calc-button operator-button nine">9</button>
+      <button data-delete class="calc-button text-operator-button delete-btn">DEL</button>
+      <button data-number class="calc-button operator-button four">4</button>
+      <button data-number class="calc-button operator-button five">5</button>
+      <button data-number class="calc-button operator-button six">6</button>
+      <button data-operation class="calc-button operator-button adding">+</button>
+      <button data-number class="calc-button operator-button one">1</button>
+      <button data-number class="calc-button operator-button two">2</button>
+      <button data-number class="calc-button operator-button three">3</button>
+      <button data-operation class="calc-button operator-button substracting">-</button>
+      <button data-number class="calc-button operator-button dot">.</button>
+      <button data-number class="calc-button operator-button zero">0</button>
+      <button data-operation class="calc-button operator-button division">/</button>
+      <button data-operation class="calc-button operator-button multiplication">*</button>
+      <button data-reset class="calc-button text-operator-button reset-btn">RESET</button>
+      <button data-equals class="calc-button equals">=</button>
+    </section>
+
+    <footer>
+      <p class="signature">coded by <a href="https://github.com/mateuszNadolny" target="blank"> mateuszNadolny</a></p>
+    </footer>
+  
+</body>
+</html>
