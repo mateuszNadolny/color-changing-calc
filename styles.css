@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
 
 /* VARIABLES */
-
 [data-mode="first"] {
     /* -----> DEFAULT THEME <----- */
-
     /* backgrounds */
     --main-background: hsl(222, 26%, 31%);
     --toggle-background: hsl(223, 31%, 20%);
     --screen-background: hsl(224, 36%, 15%);
 
     /* keys */
-
     --key-background: hsl(225, 21%, 49%);
     --key-shadow: hsl(224, 28%, 35%);
 
@@ -22,21 +19,18 @@
     --garyish-key-shadow: hsl(28, 16%, 65%);
 
     /* text */
-
     --text-bg: hsl(221, 14%, 31%);
     --white-text: hsl(0, 0%, 100%);
 }
 
 [data-mode="second"] {
     /* -----> LIGHT THEME <----- */
-
     /* backgrounds */
     --main-background: hsl(0, 0%, 90%);
     --toggle-background: hsl(0, 5%, 81%);
     --screen-background: hsl(0, 0%, 93%);
 
     /* keys */
-
     --key-background: hsl(185, 42%, 37%);
     --key-shadow: hsl(185, 58%, 25%);
 
@@ -47,14 +41,12 @@
     --garyish-key-shadow: hsl(28, 16%, 65%);
 
     /* text */
-
     --text-bg: hsl(221, 14%, 31%);
     --white-text: hsl(40, 4%, 17%);
 }
 
 [data-mode="third"] {
     /* -----> DARK THEME <----- */
-
     /* backgrounds */
     --main-background: hsl(268, 75%, 9%);
     --toggle-background: hsl(268, 71%, 12%);
@@ -71,7 +63,6 @@
     --garyish-key-shadow: hsl(290, 70%, 36%);
 
     /* text */
-
     --text-bg: hsl(52, 100%, 62%);
     --white-text: hsl(180, 13%, 84%);
 }
@@ -103,7 +94,6 @@ body {
 }
 
 /* ----> HEADER <---- */
-
 header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -116,7 +106,6 @@ header {
 }
 
 /* tristate toggle switch responsible for page-theme */
-
 .toggle-wrapper {
     display: grid;
     position: relative;
@@ -176,20 +165,7 @@ span {
     transition: all 0.3s ease-in-out;
 }
 
-input[value="default"]:checked~span {
-    left: 2px;
-}
-
-input[value="light"]:checked~span {
-    left: 46px;
-}
-
-input[value="dark"]:checked~span {
-    left: 23px;
-}
-
 /* ----> DISPLAY SECTION <---- */
-
 .display {
     color: var(--white-text);
     background-color: var(--screen-background);
@@ -209,7 +185,6 @@ input[value="dark"]:checked~span {
 }
 
 /* ----> CALCULATOR BUTTONS SECTION <---- */
-
 .calc-buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -274,7 +249,6 @@ footer {
 
 
 @media screen and (min-width: 600px) {
-
     body {
         padding: 2rem;
     }
@@ -289,7 +263,6 @@ footer {
 }
 
 @media screen and (min-width: 700px) {
-
     body {
         padding: 2rem 4rem;
     }
@@ -301,7 +274,6 @@ footer {
 }
 
 @media screen and (min-width: 900px) {
-
     body {
         padding: 1rem 8rem;
     }
@@ -314,7 +286,6 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
-
     body {
         padding: 1rem 30%;
     }
